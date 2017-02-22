@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>Hexo | It&#39;s subtitle</title>
+
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js"></script>
+
+        <link rel="stylesheet" href="/lightbox/css/lightbox.min.css">
+
+
+    <!-- isnt analytics -->
+
+</head>
+
+    <body>
+        <div id="loader">
+    <div class="loader-content">
+        <span>Loading...</span>
+    </div>
+</div>
+
+       <div id="container" style="display:none">
+        <header>
+    <div class="mobile-header">
+        <a href="/"><span id="mobile-title">Hexo</span></a>
+    </div>
+    <div class="header">
+        <a><span id="title">Hexo</span></a>
+        <div class="squa-list">
+    <ul>
+        <li class="first"><a href="/" id="home">Home</a></li>
+        <li class="second"><a href="javascript:;" id="about">About</a></li>
+
+        <li id="subtitle">
+            It&#39;s subtitle
+        </li>
+
+    </ul>
+</div>
+
+    </div>
+</header>
+
+
+    <div class="main">
+    <article class="blog-art-inner" itemprop="blogPost">
+        <div class="art-date-inner">
+    <span>
+        <time datetime="Dec 25th 2013" itemprop="datePublished">
+            Dec 25th 2013
+        </time>
+        </span>
+</div>
+
+        <header class="art-title-inner">
+            <h2 itemprop="name">
+                Tag Plugins
+            </h2>
+
+
+            <hr>
+        </header>
+        <div class="art-content">
+            <div class="content-inner" itemprop="article">
+                <p>This post is used for testing tag plugins. See <a href="http://zespia.tw/hexo/docs/tag-plugins.html" target="_blank" rel="external">docs</a> for more info.</p>
+<h2 id="Block-Quote"><a href="#Block-Quote" class="headerlink" title="Block Quote"></a>Block Quote</h2><h3 id="Normal-blockquote"><a href="#Normal-blockquote" class="headerlink" title="Normal blockquote"></a>Normal blockquote</h3><blockquote>
+<p>Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.</p>
+</blockquote>
+<h3 id="Quote-from-a-book"><a href="#Quote-from-a-book" class="headerlink" title="Quote from a book"></a>Quote from a book</h3><blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
+<h3 id="Quote-from-Twitter"><a href="#Quote-from-Twitter" class="headerlink" title="Quote from Twitter"></a>Quote from Twitter</h3><blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank" rel="external">http://devdocs.io</a></p>
+<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="external">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
+<h3 id="Quote-from-an-article-on-the-web"><a href="#Quote-from-an-article-on-the-web" class="headerlink" title="Quote from an article on the web"></a>Quote from an article on the web</h3><blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
+<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="external">Welcome to Island Marketing</a></cite></footer></blockquote>
+<h2 id="Code-Block"><a href="#Code-Block" class="headerlink" title="Code Block"></a>Code Block</h2><h3 id="Normal-code-block"><a href="#Normal-code-block" class="headerlink" title="Normal code block"></a>Normal code block</h3><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">alert</span>(<span class="string">'Hello World!'</span>);</div></pre></td></tr></table></figure>
+<h3 id="With-caption"><a href="#With-caption" class="headerlink" title="With caption"></a>With caption</h3><figure class="highlight cpp"><figcaption><span>Array.map</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">array</span>.<span class="built_in">map</span>(callback[, thisArg])</div></pre></td></tr></table></figure>
+<h3 id="With-caption-and-URL"><a href="#With-caption-and-URL" class="headerlink" title="With caption and URL"></a>With caption and URL</h3><figure class="highlight excel"><figcaption><span>.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="external">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="built_in">false</span>, <span class="number">2</span>, ‘’, <span class="number">3</span>]);</div><div class="line">=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div></pre></td></tr></table></figure>
+<h3 id="With-marked-lines"><a href="#With-marked-lines" class="headerlink" title="With marked lines"></a>With marked lines</h3><p>Line 1,7-8,10 should be marked with different color.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line marked"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</div><div class="line"></div><div class="line"><span class="keyword">const</span> hostname = <span class="string">'127.0.0.1'</span>;</div><div class="line"><span class="keyword">const</span> port = <span class="number">1337</span>;</div><div class="line"></div><div class="line">http.createServer(<span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</div><div class="line marked">  res.writeHead(<span class="number">200</span>, &#123; <span class="string">'Content-Type'</span>: <span class="string">'text/plain'</span> &#125;);</div><div class="line marked">  res.end(<span class="string">'Hello World\n'</span>);</div><div class="line">&#125;).listen(port, hostname, () =&gt; &#123;</div><div class="line marked">  <span class="built_in">console</span>.log(<span class="string">`Server running at http://<span class="subst">$&#123;hostname&#125;</span>:<span class="subst">$&#123;port&#125;</span>/`</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>Note: Theme’s style should support <code>.highlight.line.marked</code> (recommend to use the selection or current line color).</p>
+<h3 id="Gist"><a href="#Gist" class="headerlink" title="Gist"></a>Gist</h3><script src="//gist.github.com/996818.js"></script>
+<h3 id="jsFiddle"><a href="#jsFiddle" class="headerlink" title="jsFiddle"></a>jsFiddle</h3><iframe scrolling="no" width="100%" height="300" src="http://jsfiddle.net/ccWP7/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen></iframe>
+<h2 id="Pullquote"><a href="#Pullquote" class="headerlink" title="Pullquote"></a>Pullquote</h2><h3 id="Left"><a href="#Left" class="headerlink" title="Left"></a>Left</h3><blockquote class="pullquote left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus molestie arcu, et fringilla mauris placerat ac. Nullam luctus bibendum risus. Ut cursus sed ipsum feugiat egestas. Suspendisse elementum, velit eu consequat consequat, augue lorem dapibus libero, eget pulvinar dolor est sit amet nulla. Suspendisse a porta tortor, et posuere mi. Pellentesque ultricies, mi quis volutpat malesuada, erat felis vulputate nisl, ac congue ante tortor ut ante. Proin aliquam sem vel mauris tincidunt, eget scelerisque tortor euismod. Nulla tincidunt enim nec commodo dictum. Mauris id sapien et orci gravida luctus id ut dui. In vel vulputate odio. Duis vel turpis molestie, scelerisque enim eu, lobortis eros. Cras at ipsum gravida, sagittis ante vel, viverra tellus. Nunc mauris turpis, elementum ullamcorper nisl pretium, ultrices cursus justo. Mauris porttitor commodo eros, ac ornare orci interdum in. Cras fermentum cursus leo sed mattis. In dignissim lorem sem, sit amet elementum mauris venenatis ac.</p>
+<h3 id="Right"><a href="#Right" class="headerlink" title="Right"></a>Right</h3><blockquote class="pullquote right"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula justo, lobortis sit amet semper vel, dignissim sit amet libero. Praesent ac tempus ligula. Maecenas at gravida odio. Etiam tristique volutpat lacus eu faucibus. Donec non tempus arcu. Phasellus adipiscing, mauris nec mollis egestas, ipsum nunc auctor velit, et rhoncus lorem ipsum at ante. Praesent et sem in velit volutpat auctor. Duis vel mauris nulla. Maecenas mattis interdum ante, quis sagittis nibh cursus et. Nulla facilisi. Morbi convallis gravida tortor, ut fermentum enim gravida et. Nunc vel dictum nisl, non ultrices libero. Proin vestibulum felis eget orci consectetur lobortis. Vestibulum augue nulla, iaculis vitae augue vehicula, dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.</p>
+
+            </div>
+
+
+    <nav id="art-nav">
+     <hr>
+
+        <a href="/2013/12/25/gallery-post/" id="art-left" class="art-left">
+          <div class="art-lastTitle">
+
+                 < Gallery Post
+
+          </div>
+        </a>
+
+
+        <a href="/2013/12/24/link-post-without-title/" id="art-right" class="art-right">
+          <div class="art-lastTitle">www.google.com > </div>
+        </a>
+
+    </nav>
+
+
+
+            </div>
+    </article>
+
+
+
+
+
+    </div>
+
+
+
+        <div class="about">
+    <div class="about-info">
+        <h2>about</h2>
+        <p>Hello! My name is　<span>John Doe</span>。</p>
+
+        <p>Nice to meet you!</p>
+
+        <ul class="sub-list">
+
+
+                <li>
+                    github：
+                    <a href="https://github.com/hexo">hexo</a>
+                </li>
+
+
+                <li>
+                    weibo：
+                    <a href="https://weibo.com/hexo">hexo</a>
+                </li>
+
+
+                <li>
+                    twitter：
+                    <a href="https://twitter.com/hexo">hexo</a>
+                </li>
+
+
+                <li>
+                    zhihu：
+                    <a href="https://www.zhihu.com/people/hexo">hexo</a>
+                </li>
+
+        </ul>
+
+
+    </div>
+    <div class="about-friend">
+
+            <h2>Friend</h2>
+            <ul class="friend-list">
+
+                <li><a href="/">panda</a></li>
+
+                <li><a href="/">cat</a></li>
+
+                <li><a href="/">dog</a></li>
+
+            </ul>
+
+    </div>
+</div>
+
+        <footer id="footer" class="footer">
+    <div class="blog-tags">
+<hr>
+<a href="/tags/Bar/" style="font-size: 14px;">Bar</a> <a href="/tags/Baz/" style="font-size: 14px;">Baz</a> <a href="/tags/Foo/" style="font-size: 14px;">Foo</a>
+</div>
+
+    <div class="info">
+
+            &copy;
+            2017
+                <a href="https://github.com/hexo" target="_blank">
+                    John Doe
+                </a> <a href="https://github.com" target="_blank">❤</a>
+
+    </div>
+    <div class="theme">
+        <p>
+            Powered by　<a href="http://hexo.io/" target="_blank">Hexo</a>　Theme　<a href="https://github.com/ColMugX/hexo-theme-Blank" target="_blank">Blank</a>&nbsp;
+        </p>
+    </div>
+</footer>
+
+    <script src="/lightbox/js/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            if (window.screen.width >= 540) {
+            var $imga = $('img').parent('a');
+            $imga.attr('rel', 'lightbox');
+            }
+        });
+    </script>
+
+
+        <div class="goTop" id="goTop"></div>
+<div class="mobile-nav">
+    <div class="mobile-nav-item" id="menu-item"></div>
+    <div class="mobile-nav-list">
+
+        <a class="mobile-nav-list-item" href="/">Home</a>
+
+        <a class="mobile-nav-list-item" href="/archives">Archives</a>
+
+        <a class="mobile-nav-list-item" href="javascript:;" id="mobile-about">About</a>
+    </div>
+</div>
+
+      </div>
+    </body>
+</html>
