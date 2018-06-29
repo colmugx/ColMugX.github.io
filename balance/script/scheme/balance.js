@@ -1,7 +1,9 @@
-if (Nlvi.base.isBalance()) {
-  Nlvi.utils.back2top = function() {
-    Nlvi.tools.opreateClass('#backtop', 'dead', 'remove');
-    var scrollTop = Nlvi.tools.scroll(window);
+nlvi.prototype.balance = function() {
+  var utils = this.universal();
+  var tool = this.tools;
+  utils.back2top = function() {
+    tool('opreateClass')('#backtop', 'melt', 'remove');
+    var scrollTop = tool('scroll')(window);
     scrollTop(function(sct) {
       var scrollPercentRounded = Math.floor(
         sct
@@ -16,55 +18,49 @@ if (Nlvi.base.isBalance()) {
       });
     });
   }
-
-  Nlvi.utils.switchToc = function() {
-    function tocHide() {
-      $('.toc-inner').addClass('riseOut-light').one('webkitAnimationEnd AnimationEnd', function() {
-        $(this).hide();
-      });
+  utils.switchToc = function() {
+    tool('opreateClass')('#toc-switch', 'not-toc');
+    function opMenu(opt) {
+      tool('opreateClass')('.menu-item', 'has_toc', opt);
+      tool('opreateClass')('.main-nav', 'has_toc', opt);
     }
-    $('.toc-inner').one('webkitAnimationEnd AnimationEnd', function() {
-      Nlvi.tools.opreateClass('.toc-inner', 'fallIn-light', 'remove');
-      Nlvi.tools.opreateClass('#toc-switch', 'not-toc');
-    });
-    tocHide();
     $('#toc-switch').on('click', function() {
-      if (Nlvi.tools.existClass(this, 'not-toc')) {
-        Nlvi.tools.opreateClass(this, 'not-toc', 'remove');
-        Nlvi.tools.opreateClass('.toc-inner', 'riseOut-light', 'remove');
-        Nlvi.tools.opreateClass('.toc-inner', 'fallIn-light');
+      if (tool('existClass')(this, 'not-toc')) {
+        tool('opreateClass')(this, 'not-toc', 'remove');
+        tool('animationEnd')('.toc-inner', 'fadeInDown')
         $('.toc-inner').show();
-        Nlvi.tools.opreateClass('.menu-item', 'has_toc');
-        Nlvi.tools.opreateClass('.main-nav', 'has_toc');
+        opMenu();
       } else {
-        tocHide();
-        Nlvi.tools.opreateClass(this, 'not-toc');
-        Nlvi.tools.opreateClass('.menu-item', 'has_toc', 'remove');
-        Nlvi.tools.opreateClass('.main-nav', 'has_toc', 'remove');
+        tool('animationEnd')('.toc-inner', 'fadeOutUp', function() {
+          $('.toc-inner').hide();
+        });
+        tool('opreateClass')(this, 'not-toc');
+        opMenu('remove');
       }
-    })
+    });
   }
-
-  Nlvi.utils.tagcloud = function() {
+  utils.tagcloud = function() {
     function tagHide() {
-      $('#tagcloud').addClass('dead').one('webkitAnimationEnd AnimationEnd', function() {
+      $('#tagcloud').addClass('melt').one('webkitAnimationEnd AnimationEnd', function() {
         $(this).hide();
-        Nlvi.tools.opreateClass('#tagcloud', 'show syuanpi bloom dead', 'remove');
-        Nlvi.tools.opreateClass('.menu-item', 'has_tag', 'remove');
-        Nlvi.tools.opreateClass('.main-nav', 'has_tag', 'remove');
+        tool('opreateClass')('#tagcloud', 'show syuanpi clarity melt', 'remove');
+        tool('opreateClass')('.menu-item', 'has_tag', 'remove');
+        tool('opreateClass')('.main-nav', 'has_tag', 'remove');
       });
     }
     $('#tags').on('click', function() {
-      if (Nlvi.tools.existClass('#tagcloud', 'show')) {
+      if (tool('existClass')('#tagcloud', 'show')) {
         tagHide();
       } else {
         $('#tagcloud').show();
-        Nlvi.tools.opreateClass('#tagcloud', 'show syuanpi bloom');
-        Nlvi.tools.opreateClass('.menu-item', 'has_tag');
-        Nlvi.tools.opreateClass('.main-nav', 'has_tag');
+        tool('opreateClass')('#tagcloud', 'show syuanpi clarity');
+        tool('opreateClass')('.menu-item', 'has_tag');
+        tool('opreateClass')('.main-nav', 'has_tag');
       }
     });
+    $('#mobile-tags').on('click', function () {
+      $('.inner-cloud').css('transform', 'translateX(-96%)');
+    });
   }
-
-  Nlvi.utils.refreshSearch = function() {}
+  return utils
 }

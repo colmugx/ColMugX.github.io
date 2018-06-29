@@ -3,16 +3,20 @@
 <head>
   <link rel="stylesheet" href="/balance/style/style.css">
 <script>
-    var NlviConfig = {
-        title: "Hexo",
-        author: "John Doe",
-        theme: "balance",
-        lightbox: true,
-        animate: true,
-        baseUrl: "/balance/",
-        search: true
+  var nlviconfig = {
+    title: "Hexo",
+    author: "John Doe",
+    baseUrl: "/balance/",
+    theme: {
+      scheme: "balance",
+      lightbox: true,
+      animate: true,
+      search: true,
+      friends: false
     }
+  }
 </script>
+
 
 
 
@@ -137,11 +141,12 @@
 
   <aside class="post-toc">
     <span class="title" id="toc-switch"><span>Index</span></span>
-    <div class="toc-inner syuanpi back-1 fallIn-light">
+    <div class="toc-inner syuanpi back-1" style="display:none;">
       <li class="title-link"><a href="javascript:;" class="toTop">Link Post</a></li>
 
     </div>
   </aside>
+
 
 
 
@@ -217,12 +222,13 @@
         <div class="main-wrapper">
 
 
+
   <article class="
   post
    is_post
   ">
     <header class="post-header">
-      <div class="post-time syuanpi riseIn-light back-1">
+      <div class="post-time syuanpi fadeInUp back-1">
         <div class="post-time-wrapper">
           <span>2013-12-24</span>
 
@@ -231,13 +237,13 @@
 
         </div>
       </div>
-      <h1 class="post-title syuanpi riseIn-light back-2">
+      <h1 class="post-title syuanpi fadeInUp back-2">
 
           Link Post
 
       </h1>
     </header>
-    <div class="post-content syuanpi riseIn-light back-3">
+    <div class="post-content syuanpi fadeInUp back-3">
 
         <p>This is a link post. Clicking on the link should open <a href="http://www.google.com/" target="_blank" rel="noopener">Google</a> in a new tab or window.</p>
 
@@ -410,6 +416,7 @@
     </div>
 
 </div>
+
     </div>
   </div>
 </footer>
@@ -418,7 +425,7 @@
   <script src="/balance/script/lib/jquery/jquery-3.2.1.min.js"></script>
 
 
-    <script src="/balance/script/lib/lightbox/js/lightbox.min.js"></script>
+  <script src="/balance/script/lib/lightbox/js/lightbox.min.js"></script>
 
 
 
@@ -426,13 +433,13 @@
 
 
 <script src="/balance/script/src/nlvi.js"></script>
-<script src="/balance/script/src/utils.js"></script>
-<script src="/balance/script/scheme/balance.js"></script>
-<script src="/balance/script/src/plugins.js"></script>
+
+  <script src="/balance/script/scheme/balance.js"></script>
+
 <script src="/balance/script/bootstarp.js"></script>
 
 
-<div class="backtop syuanpi dead toTop" id="backtop">
+<div class="backtop syuanpi melt toTop" id="backtop">
     <i class="iconfont icon-up"></i>
     <span style="text-align:center;font-family:Georgia;"><span style="font-family:Georgia;" id="scrollpercent">1</span>%</span>
 </div>
@@ -448,17 +455,7 @@
       <div id="local-search-result"></div>
     </div>
   </div>
-  <script>
-  if (NlviConfig.theme === 'banderole') {
-    var GREETING = {
-      morning: "我的博客里可没有早饭！",
-      noon: "记得午休吃饭，不着急看我的博客~",
-      after: "下午好，感谢查阅我的博客",
-      night: "您来我的博客看笑话当做休息嘛",
-      midnight: "我觉得大半夜就不要看啦"
-    }
-  }
-  </script>
+
 
 </body>
 </html>

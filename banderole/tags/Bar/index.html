@@ -3,16 +3,20 @@
 <head>
   <link rel="stylesheet" href="/banderole/style/style.css">
 <script>
-    var NlviConfig = {
-        title: "Hexo",
-        author: "John Doe",
-        theme: "banderole",
-        lightbox: true,
-        animate: true,
-        baseUrl: "/banderole/",
-        search: true
+  var nlviconfig = {
+    title: "Hexo",
+    author: "John Doe",
+    baseUrl: "/banderole/",
+    theme: {
+      scheme: "banderole",
+      lightbox: true,
+      animate: true,
+      search: true,
+      friends: false
     }
+  }
 </script>
+
 
 
 
@@ -210,7 +214,7 @@
         <div class="main-wrapper">
 
 
-    <div class="archive syuanpi riseIn-light" id="archive">
+    <div class="archive syuanpi fadeInUp" id="archive">
 
             <h2 class="archive-title"> now in </h2>
             <span class="archive-name"> — Bar</span>
@@ -350,6 +354,7 @@
     </div>
 
 </div>
+
     </div>
   </div>
 </footer>
@@ -358,7 +363,7 @@
   <script src="/banderole/script/lib/jquery/jquery-3.2.1.min.js"></script>
 
 
-    <script src="/banderole/script/lib/lightbox/js/lightbox.min.js"></script>
+  <script src="/banderole/script/lib/lightbox/js/lightbox.min.js"></script>
 
 
 
@@ -366,13 +371,13 @@
 
 
 <script src="/banderole/script/src/nlvi.js"></script>
-<script src="/banderole/script/src/utils.js"></script>
-<script src="/banderole/script/scheme/balance.js"></script>
-<script src="/banderole/script/src/plugins.js"></script>
+
+  <script src="/banderole/script/scheme/banderole.js"></script>
+
 <script src="/banderole/script/bootstarp.js"></script>
 
 
-<div class="backtop syuanpi dead toTop" id="backtop">
+<div class="backtop syuanpi melt toTop" id="backtop">
     <i class="iconfont icon-up"></i>
     <span style="text-align:center;font-family:Georgia;"><span style="font-family:Georgia;" id="scrollpercent">1</span>%</span>
 </div>
@@ -388,17 +393,7 @@
       <div id="local-search-result"></div>
     </div>
   </div>
-  <script>
-  if (NlviConfig.theme === 'banderole') {
-    var GREETING = {
-      morning: "我的博客里可没有早饭！",
-      noon: "记得午休吃饭，不着急看我的博客~",
-      after: "下午好，感谢查阅我的博客",
-      night: "您来我的博客看笑话当做休息嘛",
-      midnight: "我觉得大半夜就不要看啦"
-    }
-  }
-  </script>
+
 
 </body>
 </html>

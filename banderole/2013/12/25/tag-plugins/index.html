@@ -3,16 +3,20 @@
 <head>
   <link rel="stylesheet" href="/banderole/style/style.css">
 <script>
-    var NlviConfig = {
-        title: "Hexo",
-        author: "John Doe",
-        theme: "banderole",
-        lightbox: true,
-        animate: true,
-        baseUrl: "/banderole/",
-        search: true
+  var nlviconfig = {
+    title: "Hexo",
+    author: "John Doe",
+    baseUrl: "/banderole/",
+    theme: {
+      scheme: "banderole",
+      lightbox: true,
+      animate: true,
+      search: true,
+      friends: false
     }
+  }
 </script>
+
 
 
 
@@ -206,12 +210,13 @@
         <div class="main-wrapper">
 
 
+
   <article class="
   post
    is_post
   ">
     <header class="post-header">
-      <div class="post-time syuanpi riseIn-light back-1">
+      <div class="post-time syuanpi fadeInUp back-1">
         <div class="post-time-wrapper">
           <span>2013-12-25</span>
 
@@ -220,13 +225,13 @@
 
         </div>
       </div>
-      <h1 class="post-title syuanpi riseIn-light back-2">
+      <h1 class="post-title syuanpi fadeInUp back-2">
 
           Tag Plugins
 
       </h1>
     </header>
-    <div class="post-content syuanpi riseIn-light back-3">
+    <div class="post-content syuanpi fadeInUp back-3">
 
         <p>This post is used for testing tag plugins. See <a href="http://zespia.tw/hexo/docs/tag-plugins.html" target="_blank" rel="noopener">docs</a> for more info.</p>
 <h2 id="Block-Quote"><a href="#Block-Quote" class="headerlink" title="Block Quote"></a>Block Quote</h2><h3 id="Normal-blockquote"><a href="#Normal-blockquote" class="headerlink" title="Normal blockquote"></a>Normal blockquote</h3><blockquote>
@@ -267,11 +272,11 @@
     </div>
     <div class="copy-url">
       <span>Url :</span>
-      <a href="http://yoursite.com/banderole/2013/12/25/tag-plugins/">http://yoursite.com/banderole/2013/12/25/tag-plugins/</a>
+      <a href="http://yoursite.com/balance/2013/12/25/tag-plugins/">http://yoursite.com/balance/2013/12/25/tag-plugins/</a>
     </div>
     <div class="copy-origin">
       <span>Origin :</span>
-      <a href="http://yoursite.com/banderole">http://yoursite.com/banderole</a>
+      <a href="http://yoursite.com/balance">http://yoursite.com/balance</a>
     </div>
     <div class="copy-license">
 
@@ -316,11 +321,12 @@
 
   <aside class="post-toc">
     <span class="title" id="toc-switch"><span>Index</span></span>
-    <div class="toc-inner syuanpi back-1 fallIn-light">
+    <div class="toc-inner syuanpi back-1" style="display:none;">
       <li class="title-link"><a href="javascript:;" class="toTop">Tag Plugins</a></li>
       <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Block-Quote"><span class="toc-text">Block Quote</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Normal-blockquote"><span class="toc-text">Normal blockquote</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Quote-from-a-book"><span class="toc-text">Quote from a book</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Quote-from-Twitter"><span class="toc-text">Quote from Twitter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Quote-from-an-article-on-the-web"><span class="toc-text">Quote from an article on the web</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-Block"><span class="toc-text">Code Block</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Normal-code-block"><span class="toc-text">Normal code block</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#With-caption"><span class="toc-text">With caption</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#With-caption-and-URL"><span class="toc-text">With caption and URL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#With-marked-lines"><span class="toc-text">With marked lines</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Gist"><span class="toc-text">Gist</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jsFiddle"><span class="toc-text">jsFiddle</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pullquote"><span class="toc-text">Pullquote</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Left"><span class="toc-text">Left</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Right"><span class="toc-text">Right</span></a></li></ol></li></ol>
     </div>
   </aside>
+
 
 
 
@@ -434,6 +440,7 @@
     </div>
 
 </div>
+
     </div>
   </div>
 </footer>
@@ -442,7 +449,7 @@
   <script src="/banderole/script/lib/jquery/jquery-3.2.1.min.js"></script>
 
 
-    <script src="/banderole/script/lib/lightbox/js/lightbox.min.js"></script>
+  <script src="/banderole/script/lib/lightbox/js/lightbox.min.js"></script>
 
 
 
@@ -450,13 +457,13 @@
 
 
 <script src="/banderole/script/src/nlvi.js"></script>
-<script src="/banderole/script/src/utils.js"></script>
-<script src="/banderole/script/scheme/balance.js"></script>
-<script src="/banderole/script/src/plugins.js"></script>
+
+  <script src="/banderole/script/scheme/banderole.js"></script>
+
 <script src="/banderole/script/bootstarp.js"></script>
 
 
-<div class="backtop syuanpi dead toTop" id="backtop">
+<div class="backtop syuanpi melt toTop" id="backtop">
     <i class="iconfont icon-up"></i>
     <span style="text-align:center;font-family:Georgia;"><span style="font-family:Georgia;" id="scrollpercent">1</span>%</span>
 </div>
@@ -472,17 +479,7 @@
       <div id="local-search-result"></div>
     </div>
   </div>
-  <script>
-  if (NlviConfig.theme === 'banderole') {
-    var GREETING = {
-      morning: "我的博客里可没有早饭！",
-      noon: "记得午休吃饭，不着急看我的博客~",
-      after: "下午好，感谢查阅我的博客",
-      night: "您来我的博客看笑话当做休息嘛",
-      midnight: "我觉得大半夜就不要看啦"
-    }
-  }
-  </script>
+
 
 </body>
 </html>

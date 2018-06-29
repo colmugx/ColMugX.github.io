@@ -331,7 +331,7 @@ h6 {
   position: relative;
 }
 .highlight pre * {
-  font-family: 'Segoe UI', monospace, Consolas, Monaco, Menlo, sans-serif !important;
+  font-family: 'Segoe UI', monospace, Consolas, Monaco, Menlo, 'Microsoft YaHei', sans-serif !important;
 }
 .highlight .gutter {
   width: 10px;
@@ -346,6 +346,9 @@ h6 {
 }
 .highlight .code pre {
   padding: 0 8px;
+}
+.highlight .code .comment {
+  font-size: 14px;
 }
 .highlight .line {
   height: 22px;
@@ -708,7 +711,7 @@ h6 {
   padding: 16px;
   display: flex;
   align-items: center;
-  background-color: rgba(57,197,187,0.1);
+  border-top: 3px solid #39c5bb;
 }
 @media screen and (max-width: 650px) {
   .header {
@@ -727,10 +730,6 @@ h6 {
   margin: 0 auto;
   font-size: 16px;
   color: #49545f;
-}
-.header .logo,
-.header .main-nav {
-  flex: 1;
 }
 .header .logo {
   display: flex;
@@ -912,7 +911,7 @@ h6 {
   margin-top: 16px;
   padding-top: 32px;
   position: relative;
-  font-weight: 400;
+  font-weight: 300;
   background-image: linear-gradient(180deg, #e1dede, #e1dede 50%, transparent 50%);
   background-size: 100% 1px;
   background-repeat: no-repeat;
@@ -1076,7 +1075,7 @@ h6 {
 .post .post-content code {
   background-color: rgba(57,197,187,0.1);
   color: #2a6e69;
-  font-family: 'Segoe UI', monospace, Consolas, Monaco, Menlo, sans-serif;
+  font-family: 'Segoe UI', monospace, Consolas, Monaco, Menlo, 'Microsoft YaHei', sans-serif;
   margin: 0 4px;
   padding: 0 4px;
 }
@@ -1201,19 +1200,14 @@ h6 {
   bottom: 32px;
   right: 32px;
   color: #39c5bb;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 650px) {
   .backtop {
     display: none;
   }
-}
-.backtop:hover {
-  -webkit-animation-name: float-in;
-  animation-name: float-in;
-  -webkit-animation-duration: 2.33s;
-  animation-duration: 2.33s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
 }
 .backtop i {
   font-size: 24px;
@@ -1552,10 +1546,10 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,0.75);
 }
 .search .search-wrapper {
-  background: transparent;
+  background-color: transparent;
   width: 100%;
   max-width: 100%;
   position: absolute;
@@ -1572,6 +1566,9 @@ h6 {
   color: #fff;
   font-weight: 100;
   font-size: 3.6rem;
+  transition: transform 0.25s ease-out;
+  -moz-transition: transform 0.25s ease-out;
+  -webkit-transition: transform 0.25s ease-out;
 }
 @media screen and (max-width: 800px) {
   .search .search-wrapper #search-header {
@@ -1588,12 +1585,15 @@ h6 {
   height: 60px;
   outline: none;
   border: none;
-  background: transparent;
+  background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
   font-size: 32px;
   padding: 8px;
   font-weight: 100;
+  transition: transform 0.25s ease-out;
+  -moz-transition: transform 0.25s ease-out;
+  -webkit-transition: transform 0.25s ease-out;
 }
 @media screen and (max-width: 800px) {
   .search .search-wrapper input {

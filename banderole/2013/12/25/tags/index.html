@@ -3,16 +3,20 @@
 <head>
   <link rel="stylesheet" href="/banderole/style/style.css">
 <script>
-    var NlviConfig = {
-        title: "Hexo",
-        author: "John Doe",
-        theme: "banderole",
-        lightbox: true,
-        animate: true,
-        baseUrl: "/banderole/",
-        search: true
+  var nlviconfig = {
+    title: "Hexo",
+    author: "John Doe",
+    baseUrl: "/banderole/",
+    theme: {
+      scheme: "banderole",
+      lightbox: true,
+      animate: true,
+      search: true,
+      friends: false
     }
+  }
 </script>
+
 
 
 
@@ -208,18 +212,19 @@
         <div class="main-wrapper">
 
 
+
   <article class="
   post
    is_post
   ">
     <header class="post-header">
-      <div class="post-time syuanpi riseIn-light back-1">
+      <div class="post-time syuanpi fadeInUp back-1">
         <div class="post-time-wrapper">
           <span>2013-12-24</span>
 
 
 
-              <aside class="post-tags syuanpi riseIn-light back-3">
+              <aside class="post-tags syuanpi fadeInUp back-3">
 
                 <a href="/banderole/tags/Foo/">Foo</a>
 
@@ -232,13 +237,13 @@
 
         </div>
       </div>
-      <h1 class="post-title syuanpi riseIn-light back-2">
+      <h1 class="post-title syuanpi fadeInUp back-2">
 
           Tags
 
       </h1>
     </header>
-    <div class="post-content syuanpi riseIn-light back-3">
+    <div class="post-content syuanpi fadeInUp back-3">
 
         <p>This post contains 3 tags. Make sure your theme can display all of the tags.</p>
 
@@ -256,11 +261,11 @@
     </div>
     <div class="copy-url">
       <span>Url :</span>
-      <a href="http://yoursite.com/banderole/2013/12/25/tags/">http://yoursite.com/banderole/2013/12/25/tags/</a>
+      <a href="http://yoursite.com/balance/2013/12/25/tags/">http://yoursite.com/balance/2013/12/25/tags/</a>
     </div>
     <div class="copy-origin">
       <span>Origin :</span>
-      <a href="http://yoursite.com/banderole">http://yoursite.com/banderole</a>
+      <a href="http://yoursite.com/balance">http://yoursite.com/balance</a>
     </div>
     <div class="copy-license">
 
@@ -305,11 +310,12 @@
 
   <aside class="post-toc">
     <span class="title" id="toc-switch"><span>Index</span></span>
-    <div class="toc-inner syuanpi back-1 fallIn-light">
+    <div class="toc-inner syuanpi back-1" style="display:none;">
       <li class="title-link"><a href="javascript:;" class="toTop">Tags</a></li>
 
     </div>
   </aside>
+
 
 
 
@@ -423,6 +429,7 @@
     </div>
 
 </div>
+
     </div>
   </div>
 </footer>
@@ -431,7 +438,7 @@
   <script src="/banderole/script/lib/jquery/jquery-3.2.1.min.js"></script>
 
 
-    <script src="/banderole/script/lib/lightbox/js/lightbox.min.js"></script>
+  <script src="/banderole/script/lib/lightbox/js/lightbox.min.js"></script>
 
 
 
@@ -439,13 +446,13 @@
 
 
 <script src="/banderole/script/src/nlvi.js"></script>
-<script src="/banderole/script/src/utils.js"></script>
-<script src="/banderole/script/scheme/balance.js"></script>
-<script src="/banderole/script/src/plugins.js"></script>
+
+  <script src="/banderole/script/scheme/banderole.js"></script>
+
 <script src="/banderole/script/bootstarp.js"></script>
 
 
-<div class="backtop syuanpi dead toTop" id="backtop">
+<div class="backtop syuanpi melt toTop" id="backtop">
     <i class="iconfont icon-up"></i>
     <span style="text-align:center;font-family:Georgia;"><span style="font-family:Georgia;" id="scrollpercent">1</span>%</span>
 </div>
@@ -461,17 +468,7 @@
       <div id="local-search-result"></div>
     </div>
   </div>
-  <script>
-  if (NlviConfig.theme === 'banderole') {
-    var GREETING = {
-      morning: "我的博客里可没有早饭！",
-      noon: "记得午休吃饭，不着急看我的博客~",
-      after: "下午好，感谢查阅我的博客",
-      night: "您来我的博客看笑话当做休息嘛",
-      midnight: "我觉得大半夜就不要看啦"
-    }
-  }
-  </script>
+
 
 </body>
 </html>
