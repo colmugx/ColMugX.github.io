@@ -1,7 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="/banderole/style/style.css">
+<html lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="browsermode" content="application">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hexo">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="msapplication-navbutton-color" content="#666666">
+<meta name="format-detection" content="telephone=no">
+
+
+
+
+
+
+<link rel="apple-touch-startup-image" media="(device-width: 375px)" href="assets/apple-launch-1125x2436.png">
+<link rel="apple-touch-startup-image" media="(orientation: landscape)" href="assets/apple-touch-startup-image-2048x1496.png">
+<link rel="stylesheet" href="/banderole/style/style.css">
 <script>
   var nlviconfig = {
     title: "Hexo",
@@ -11,8 +29,12 @@
       scheme: "banderole",
       lightbox: true,
       animate: true,
-      search: true,
-      friends: false
+      search: false,
+      friends: false,
+      reward: false,
+      pjax: false,
+      lazy: false,
+      toc: true
     }
   }
 </script>
@@ -36,20 +58,6 @@
 
 
 
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="browsermode" content="application">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Hexo">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="msapplication-navbutton-color" content="#666666">
-<meta name= "format-detection" content="telephone=no" />
-<meta name="keywords" content="nlvi, Nlvi" />
-
-
-  <meta name="subtitle" content="Making Life Better">
-
 
 
 
@@ -60,41 +68,19 @@
 </title>
 </head>
 <body>
-  <div class="progress">
-  <div class="progress-inner"></div>
-</div>
-
-
-    <div class="tagcloud-mask"></div>
-<div class="tagcloud" id="tagcloud">
-  <div class="tagcloud-inner">
-    <a href="/banderole/tags/Bar/" style="font-size: 14px;">Bar</a> <a href="/banderole/tags/Baz/" style="font-size: 14px;">Baz</a> <a href="/banderole/tags/Foo/" style="font-size: 14px;">Foo</a>
-  </div>
-</div>
-
-
-  <div class="container">
-
+  <div class="container" style="display:none;">
     <header class="header" id="header">
   <div class="header-wrapper">
     <div class="logo">
   <div class="logo-inner syuanpi tvIn">
-    <span><a href="/banderole/">Hexo</a></span>
-
-      <span id="subtitle">Making Life Better</span>
+    <h1><a href="/banderole/">Hexo</a></h1>
 
   </div>
 </div>
+
     <nav class="main-nav">
 
   <ul class="main-nav-list syuanpi tvIn">
-
-    <li class="menu-item">
-      <a href="javascript:;" id="search">
-        <span>Search</span>
-
-      </a>
-    </li>
 
 
 
@@ -102,8 +88,7 @@
 
     <li class="menu-item">
       <a href="/banderole/" id="article">
-        <span class="base-name">Article</span>
-
+        <span class="base-name">ARTICLE</span>
       </a>
     </li>
 
@@ -112,8 +97,7 @@
 
     <li class="menu-item">
       <a href="/banderole/archives" id="archives">
-        <span class="base-name">Archives</span>
-
+        <span class="base-name">ARCHIVES</span>
       </a>
     </li>
 
@@ -122,8 +106,7 @@
 
     <li class="menu-item">
       <a href="javascript:;" id="tags">
-        <span class="base-name">Tags</span>
-
+        <span class="base-name">TAGS</span>
       </a>
     </li>
 
@@ -132,76 +115,21 @@
 
     <li class="menu-item">
       <a href="/banderole/about" id="about">
-        <span class="base-name">About</span>
-
+        <span class="base-name">ABOUT</span>
       </a>
     </li>
+
 
   </ul>
 
 </nav>
 
-
   </div>
 </header>
-<div class="mobile-header">
-  <div class="mobile-header-body">
-    <div class="mobile-header-list">
-
-
-            <div class="mobile-nav-item">
-                <a href="/banderole/">
-                    <span>Article</span>
-
-
-                </a>
-            </div>
-
-
-
-            <div class="mobile-nav-item">
-                <a href="/banderole/archives">
-                    <span>Archives</span>
-
-
-                </a>
-            </div>
-
-
-
-          <div class="mobile-nav-item inner-cloud">
-            <div class="mobile-nav-tag">
-              <a href="javascript:;" id="mobile-tags">
-                <span>Tags</span>
-
-
-              </a>
-            </div>
-            <div class="mobile-nav-tagcloud">
-              <div class="mobile-tagcloud-inner">
-                <a href="/banderole/tags/Bar/" style="font-size: 14px;">Bar</a> <a href="/banderole/tags/Baz/" style="font-size: 14px;">Baz</a> <a href="/banderole/tags/Foo/" style="font-size: 14px;">Foo</a>
-              </div>
-            </div>
-          </div>
-
-
-
-            <div class="mobile-nav-item">
-                <a href="/banderole/about">
-                    <span>About</span>
-
-
-                </a>
-            </div>
-
-
-    </div>
-  </div>
+<div class="mobile-header" id="mobile-header">
   <div class="mobile-header-nav">
     <div class="mobile-header-item" id="mobile-left">
-      <div class="header-menu-item">
-        <span class="header-menu-line"></span>
-      </div>
+      <div class="header-menu-item"></div>
     </div>
     <h1 class="mobile-header-title">
       <a href="/">Hexo</a>
@@ -209,18 +137,19 @@
     <div class="mobile-header-item"></div>
   </div>
 </div>
+
+
+
     <div class="container-inner">
       <main class="main" id="main">
         <div class="main-wrapper">
 
 
-    <div class="archive syuanpi fadeInUp" id="archive">
+  <div class="archive syuanpi fadeInRightShort" id="archive">
 
-            <h1 class="archive-title">Total</h1>
-            <span class="archive-num">14 Posts In Total</span>
+      <aside class="archive-title">Total</aside>
+      <span class="archive-num">15 Posts In Total</span>
 
-        <div class="archive-list">
-            <ul>
 
 
 
@@ -228,198 +157,285 @@
 
 
 
-                        <h2 class="archive-year"> 2013 </h2>
+            <div class="archive-group">
+            <time class="archive-year"> 2013 </time>
+            <div class="archive-list">
 
 
+        <div class="archive-post">
+          <div class="archive-post-content">
 
+              <p>This is a image test post.</p>
+<p><img src="assets/wallpaper-2572384.jpg" alt></p>
+<p><img src="assets/wallpaper-2311325.jpg" alt="Caption"></p>
+<p><img src="assets/wallpaper-878514.jpg" alt></p>
+<p><img src="https://placehold.it/350x150.jpg" alt="Small Picture"></p>
 
-            <li class="archive-post">
-                <span class="archive-post-time">
 
-                    12-25
-
-                </span>
-                <span class="archive-post-link">
-                    <a href="/banderole/2013/12/26/no-title/"></a>
-                </span>
-            </li>
-
-
-
-
-
-
-
-
-            <li class="archive-post">
-                <span class="archive-post-time">
-
-                    12-25
-
-                </span>
-                <span class="archive-post-link">
-                    <a href="/banderole/2013/12/25/excerpts/">Excerpts</a>
-                </span>
-            </li>
-
-
-
-
-
-
-
-
-            <li class="archive-post">
-                <span class="archive-post-time">
-
-                    12-25
-
-                </span>
-                <span class="archive-post-link">
-                    <a href="/banderole/2013/12/25/videos/">Videos</a>
-                </span>
-            </li>
-
-
-
-
-
-
-
-
-            <li class="archive-post">
-                <span class="archive-post-time">
-
-                    12-25
-
-                </span>
-                <span class="archive-post-link">
-                    <a href="/banderole/2013/12/25/gallery-post/">Gallery Post</a>
-                </span>
-            </li>
-
-
-
-
-
-
-
-
-            <li class="archive-post">
-                <span class="archive-post-time">
-
-                    12-25
-
-                </span>
-                <span class="archive-post-link">
-                    <a href="/banderole/2013/12/25/tag-plugins/">Tag Plugins</a>
-                </span>
-            </li>
-
-
-
-
-
-
-
-
-            <li class="archive-post">
-                <span class="archive-post-time">
-
-                    12-24
-
-                </span>
-                <span class="archive-post-link">
-                    <a href="/banderole/2013/12/25/link-post-without-title/">www.google.com</a>
-                </span>
-            </li>
-
-
-
-
-
-
-
-
-            <li class="archive-post">
-                <span class="archive-post-time">
-
-                    12-24
-
-                </span>
-                <span class="archive-post-link">
-                    <a href="/banderole/2013/12/25/日本語テスト/">日本語テスト</a>
-                </span>
-            </li>
-
-
-
-
-
-
-
-
-            <li class="archive-post">
-                <span class="archive-post-time">
-
-                    12-24
-
-                </span>
-                <span class="archive-post-link">
-                    <a href="/banderole/2013/12/25/中文測試/">中文測試</a>
-                </span>
-            </li>
-
-
-
-
-
-
-
-
-            <li class="archive-post">
-                <span class="archive-post-time">
-
-                    12-24
-
-                </span>
-                <span class="archive-post-link">
-                    <a href="/banderole/2013/12/25/long-title/">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a>
-                </span>
-            </li>
-
-
-
-
-
-
-
-
-            <li class="archive-post">
-                <span class="archive-post-time">
-
-                    12-24
-
-                </span>
-                <span class="archive-post-link">
-                    <a href="/banderole/2013/12/25/categories/">Categories</a>
-                </span>
-            </li>
-
-
-            </ul>
+          </div>
+          <div class="archive-post-info">
+            <time class="archive-post-time">
+              2013-12-26
+            </time>
+            <a class="archive-post-link" href="/banderole/2013/12/26/images/">
+              Images
+            </a>
+          </div>
         </div>
-    </div>
+
+
+
+
+
+        <div class="archive-post">
+          <div class="archive-post-content">
+
+              <p>This post doesn’t have a title. Make sure it’s accessible.</p>
+
+
+          </div>
+          <div class="archive-post-info">
+            <time class="archive-post-time">
+              2013-12-25
+            </time>
+            <a class="archive-post-link" href="/banderole/2013/12/25/no-title/">
+
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="archive-post">
+          <div class="archive-post-content">
+
+              <p>The following contents should be invisible in home/archive page.</p>
+
+          </div>
+          <div class="archive-post-info">
+            <time class="archive-post-time">
+              2013-12-25
+            </time>
+            <a class="archive-post-link" href="/banderole/2013/12/25/excerpts/">
+              Excerpts
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="archive-post">
+          <div class="archive-post-content">
+
+              <p>This is a video test post.</p>
+<p><strong>Youtube</strong></p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/TIbZDRXM-Tg" frameborder="0" allowfullscreen></iframe></div>
+<p><strong>Vimeo</strong></p>
+<div class="video-container"><iframe src="//player.vimeo.com/video/82090131" frameborder="0" allowfullscreen></iframe></div>
+
+          </div>
+          <div class="archive-post-info">
+            <time class="archive-post-time">
+              2013-12-25
+            </time>
+            <a class="archive-post-link" href="/banderole/2013/12/25/videos/">
+              Videos
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="archive-post">
+          <div class="archive-post-content">
+
+              <p>This post contains 4 photos:</p>
+<ul>
+<li>Widescreen wallpaper</li>
+<li>Portrait photo</li>
+<li>Dual widescreen wallpaper</li>
+<li>Small photo</li>
+</ul>
+<p>All photos should be displayed properly.</p>
+<p><em>From <a href="http://wallbase.cc" target="_blank" rel="noopener">Wallbase.cc</a></em></p>
+
+
+          </div>
+          <div class="archive-post-info">
+            <time class="archive-post-time">
+              2013-12-25
+            </time>
+            <a class="archive-post-link" href="/banderole/2013/12/25/gallery-post/">
+              Gallery Post
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="archive-post">
+          <div class="archive-post-content">
+
+              <p>This post is used for testing tag plugins. See <a href="http://zespia.tw/hexo/docs/tag-plugins.html" target="_blank" rel="noopener">docs</a> for more info.</p>
+<h2 id="Block-Quote"><a href="#Block-Quote" class="headerlink" title="Block Quote"></a>Block Quote</h2><h3 id="Normal-blockquote"><a href="#Normal-blockquote" class="headerlink" title="Normal blockquote"></a>Normal blockquote</h3><blockquote>
+<p>Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.</p>
+</blockquote>
+<h3 id="Quote-from-a-book"><a href="#Quote-from-a-book" class="headerlink" title="Quote from a book"></a>Quote from a book</h3><blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
+<h3 id="Quote-from-Twitter"><a href="#Quote-from-Twitter" class="headerlink" title="Quote from Twitter"></a>Quote from Twitter</h3><blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank" rel="noopener">http://devdocs.io</a></p>
+<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="noopener">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
+<h3 id="Quote-from-an-article-on-the-web"><a href="#Quote-from-an-article-on-the-web" class="headerlink" title="Quote from an article on the web"></a>Quote from an article on the web</h3><blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
+<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="noopener">Welcome to Island Marketing</a></cite></footer></blockquote>
+<h2 id="Code-Block"><a href="#Code-Block" class="headerlink" title="Code Block"></a>Code Block</h2><h3 id="Normal-code-block"><a href="#Normal-code-block" class="headerlink" title="Normal code block"></a>Normal code block</h3><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">alert</span>(<span class="string">'Hello World!'</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="With-caption"><a href="#With-caption" class="headerlink" title="With caption"></a>With caption</h3><figure class="highlight cpp"><figcaption><span>Array.map</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">array</span>.<span class="built_in">map</span>(callback[, thisArg])</span><br></pre></td></tr></table></figure>
+<h3 id="With-caption-and-URL"><a href="#With-caption-and-URL" class="headerlink" title="With caption and URL"></a>With caption and URL</h3><figure class="highlight excel"><figcaption><span>.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="noopener">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="built_in">false</span>, <span class="number">2</span>, ‘’, <span class="number">3</span>]);</span><br><span class="line">=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
+<h3 id="With-marked-lines"><a href="#With-marked-lines" class="headerlink" title="With marked lines"></a>With marked lines</h3><p>Line 1,7-8,10 should be marked with different color.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line marked"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> hostname = <span class="string">'127.0.0.1'</span>;</span><br><span class="line"><span class="keyword">const</span> port = <span class="number">1337</span>;</span><br><span class="line"></span><br><span class="line">http.createServer(<span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line marked">  res.writeHead(<span class="number">200</span>, &#123; <span class="string">'Content-Type'</span>: <span class="string">'text/plain'</span> &#125;);</span><br><span class="line marked">  res.end(<span class="string">'Hello World\n'</span>);</span><br><span class="line">&#125;).listen(port, hostname, () =&gt; &#123;</span><br><span class="line marked">  <span class="built_in">console</span>.log(<span class="string">`Server running at http://<span class="subst">$&#123;hostname&#125;</span>:<span class="subst">$&#123;port&#125;</span>/`</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Note: Theme’s style should support <code>.highlight.line.marked</code> (recommend to use the selection or current line color).</p>
+<h3 id="Gist"><a href="#Gist" class="headerlink" title="Gist"></a>Gist</h3><script src="//gist.github.com/996818.js"></script>
+<h3 id="jsFiddle"><a href="#jsFiddle" class="headerlink" title="jsFiddle"></a>jsFiddle</h3><iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/ccWP7/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen></iframe>
+<h2 id="Pullquote"><a href="#Pullquote" class="headerlink" title="Pullquote"></a>Pullquote</h2><h3 id="Left"><a href="#Left" class="headerlink" title="Left"></a>Left</h3><blockquote class="pullquote left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus molestie arcu, et fringilla mauris placerat ac. Nullam luctus bibendum risus. Ut cursus sed ipsum feugiat egestas. Suspendisse elementum, velit eu consequat consequat, augue lorem dapibus libero, eget pulvinar dolor est sit amet nulla. Suspendisse a porta tortor, et posuere mi. Pellentesque ultricies, mi quis volutpat malesuada, erat felis vulputate nisl, ac congue ante tortor ut ante. Proin aliquam sem vel mauris tincidunt, eget scelerisque tortor euismod. Nulla tincidunt enim nec commodo dictum. Mauris id sapien et orci gravida luctus id ut dui. In vel vulputate odio. Duis vel turpis molestie, scelerisque enim eu, lobortis eros. Cras at ipsum gravida, sagittis ante vel, viverra tellus. Nunc mauris turpis, elementum ullamcorper nisl pretium, ultrices cursus justo. Mauris porttitor commodo eros, ac ornare orci interdum in. Cras fermentum cursus leo sed mattis. In dignissim lorem sem, sit amet elementum mauris venenatis ac.</p>
+<h3 id="Right"><a href="#Right" class="headerlink" title="Right"></a>Right</h3><blockquote class="pullquote right"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula justo, lobortis sit amet semper vel, dignissim sit amet libero. Praesent ac tempus ligula. Maecenas at gravida odio. Etiam tristique volutpat lacus eu faucibus. Donec non tempus arcu. Phasellus adipiscing, mauris nec mollis egestas, ipsum nunc auctor velit, et rhoncus lorem ipsum at ante. Praesent et sem in velit volutpat auctor. Duis vel mauris nulla. Maecenas mattis interdum ante, quis sagittis nibh cursus et. Nulla facilisi. Morbi convallis gravida tortor, ut fermentum enim gravida et. Nunc vel dictum nisl, non ultrices libero. Proin vestibulum felis eget orci consectetur lobortis. Vestibulum augue nulla, iaculis vitae augue vehicula, dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.</p>
+
+
+          </div>
+          <div class="archive-post-info">
+            <time class="archive-post-time">
+              2013-12-25
+            </time>
+            <a class="archive-post-link" href="/banderole/2013/12/25/tag-plugins/">
+              Tag Plugins
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="archive-post">
+          <div class="archive-post-content">
+
+              <p>This is a link post without a title. The title should be the link with or without protocol. Clicking on the link should open <a href="http://www.google.com/" target="_blank" rel="noopener">Google</a> in a new tab or window.</p>
+
+
+          </div>
+          <div class="archive-post-info">
+            <time class="archive-post-time">
+              2013-12-24
+            </time>
+            <a class="archive-post-link" href="/banderole/2013/12/24/link-post-without-title/">
+              www.google.com
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="archive-post">
+          <div class="archive-post-content">
+
+              <p>This is a Japanese test post.</p>
+<p>私は昨日ついにその助力家というのの上よりするたなけれ。</p>
+<p>最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。</p>
+<p>がたを知っないはずも同時に九月をいよいよたありた。</p>
+<p>もっと槙さんにぼんやり金少し説明にえた自分大した人私か影響にというお関係たうませないが、この次第も私か兄具合に使うて、槙さんののに当人のあなたにさぞご意味と行くて私個人が小尊敬を聴いように同時に同反抗に集っだうて、いよいよまず相当へあっうからいだ事をしでなけれ。</p>
+<blockquote>
+<p>それでそれでもご時日をしはずはたったいやと突き抜けるますて、その元がは行ったてという獄を尽すていけですた。</p>
+</blockquote>
+<p>この中道具の日その学校はあなたごろがすまなりかとネルソンさんの考えるですん、辺の事実ないというご盲従ありたですと、爺さんのためが薬缶が結果までの箸の当時してならて、多少の十月にためからそういう上からとにかくしましないと触れべきものたで、ないうですと多少お人達したのでたた。</p>
+<p><em>From <a href="http://lipsum.sugutsukaeru.jp/index.cgi" target="_blank" rel="noopener">すぐ使えるダミーテキスト - 日本語 Lorem ipsum</a></em></p>
+
+
+          </div>
+          <div class="archive-post-info">
+            <time class="archive-post-time">
+              2013-12-24
+            </time>
+            <a class="archive-post-link" href="/banderole/2013/12/24/日本語テスト/">
+              日本語テスト
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="archive-post">
+          <div class="archive-post-content">
+
+              <p>This is a Chinese test post.</p>
+<p>善我王上魚、產生資西員合兒臉趣論。畫衣生這著爸毛親可時，安程幾？合學作。觀經而作建。都非子作這！法如言子你關！手師也。</p>
+<p>以也座論頭室業放。要車時地變此親不老高小是統習直麼調未，行年香一？</p>
+<p>就竟在，是我童示讓利分和異種百路關母信過明驗有個歷洋中前合著區亮風值新底車有正結，進快保的行戰從：弟除文辦條國備當來際年每小腳識世可的的外的廣下歌洲保輪市果底天影；全氣具些回童但倒影發狀在示，數上學大法很，如要我……月品大供這起服滿老？應學傳者國：山式排只不之然清同關；細車是！停屋常間又，資畫領生，相們制在？公別的人寫教資夠。資再我我！只臉夫藝量不路政吃息緊回力之；兒足灣電空時局我怎初安。意今一子區首者微陸現際安除發連由子由而走學體區園我車當會，經時取頭，嚴了新科同？很夫營動通打，出和導一樂，查旅他。坐是收外子發物北看蘭戰坐車身做可來。道就學務。</p>
+<p>國新故。</p>
+<blockquote>
+<p>工步他始能詩的，裝進分星海演意學值例道……於財型目古香亮自和這乎？化經溫詩。只賽嚴大一主價世哥受的沒有中年即病行金拉麼河。主小路了種就小為廣不？</p>
+</blockquote>
+<p><em>From <a href="http://www.richyli.com/tool/loremipsum/" target="_blank" rel="noopener">亂數假文產生器 - Chinese Lorem Ipsum</a></em></p>
+
+
+          </div>
+          <div class="archive-post-info">
+            <time class="archive-post-time">
+              2013-12-24
+            </time>
+            <a class="archive-post-link" href="/banderole/2013/12/24/中文測試/">
+              中文測試
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="archive-post">
+          <div class="archive-post-content">
+
+              <p>This post has a long title. Make sure the title displayed right.</p>
+
+
+          </div>
+          <div class="archive-post-info">
+            <time class="archive-post-time">
+              2013-12-24
+            </time>
+            <a class="archive-post-link" href="/banderole/2013/12/24/long-title/">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.
+            </a>
+          </div>
+        </div>
+
+
+
+
+  </div>
 
   <nav class="pagination">
-      <span class="page-number current">1</span><a class="page-number" href="/banderole/archives/2013/page/2/">2</a><a class="extend next" rel="next" href="/banderole/archives/2013/page/2/">Next ></a>
+      <span class="page-number current">1</span><a class="page-number" href="/banderole/archives/2013/page/2/">2</a><a class="extend next" rel="next" href="/banderole/archives/2013/page/2/">Next<i class="iconfont icon-enter"></i></a>
   </nav>
 
 
 
-        </div>
-      </main>
 
+        </div>
+      </div></div></main>
       <footer class="footer syuanpi fadeIn" id="footer">
   <hr>
   <div class="footer-wrapper">
@@ -438,16 +454,8 @@
 
 
 
-            <a href="https://www.facebook.com/1" class="iconfont icon-facebook" title="facebook"></a>
 
-
-
-
-
-
-
-            <a href="https://twitter.com/2" class="iconfont icon-twitter" title="twitter"></a>
-
+            <a href="https://www.facebook.com/1" class="iconfont icon-social-facebook" title="facebook"></a>
 
 
 
@@ -456,16 +464,29 @@
 
 
 
+            <a href="https://twitter.com/2" class="iconfont icon-social-twitter" title="twitter"></a>
 
 
 
 
-            <a href="https://www.instagram.com/3" class="iconfont icon-ins" title="instagram"></a>
 
 
 
 
-            <a href="https://weibo.com/4" class="iconfont icon-weibo" title="weibo"></a>
+
+
+
+
+
+
+            <a href="3" class="iconfont icon-social-instagram" title="instagram"></a>
+
+
+
+
+
+            <a href="https://weibo.com/4" class="iconfont icon-social-weibo" title="weibo"></a>
+
 
 
 
@@ -484,7 +505,8 @@
 
 
 
-            <a href="https://github.com/6" class="iconfont icon-github" title="github"></a>
+
+            <a href="https://github.com/6" class="iconfont icon-social-github" title="github"></a>
 
 
 
@@ -499,17 +521,31 @@
 
 
 
-            <a href="https://www.linkedin.com/in/7" class="iconfont icon-linkedin" title="linkedin"></a>
 
+            <a href="https://www.linkedin.com/in/7" class="iconfont icon-social-linkedin" title="linkedin"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+            <a href="https://www.douban.com/people/8" class="iconfont icon-social-douban" title="douban"></a>
 
 
 </div>
+
     </div>
     <div class="right">
       <div class="copyright">
     <div class="info">
         <span>&copy;</span>
-        <span>2016 ~ 2018</span>
+        <span>2016 ~ 2019</span>
         <span>❤</span>
         <span>John Doe</span>
     </div>
@@ -530,8 +566,69 @@
   </div>
 </footer>
     </div>
+    <div class="tagcloud" id="tagcloud">
+  <div class="tagcloud-taglist">
+
+    <div class="tagcloud-tag">
+      <button>Foo</button>
+    </div>
+
+    <div class="tagcloud-tag">
+      <button>Bar</button>
+    </div>
+
+    <div class="tagcloud-tag">
+      <button>Baz</button>
+    </div>
+
   </div>
-  <script src="/banderole/script/lib/jquery/jquery-3.2.1.min.js"></script>
+
+    <div class="tagcloud-postlist active">
+      <h2>Foo</h2>
+
+        <div class="tagcloud-post">
+          <a href="2013/12/24/tags/">
+            <time class="tagcloud-posttime">2013 / 12 / 24</time>
+            <span>Tags</span>
+          </a>
+        </div>
+
+    </div>
+
+    <div class="tagcloud-postlist ">
+      <h2>Bar</h2>
+
+        <div class="tagcloud-post">
+          <a href="2013/12/24/tags/">
+            <time class="tagcloud-posttime">2013 / 12 / 24</time>
+            <span>Tags</span>
+          </a>
+        </div>
+
+    </div>
+
+    <div class="tagcloud-postlist ">
+      <h2>Baz</h2>
+
+        <div class="tagcloud-post">
+          <a href="2013/12/24/tags/">
+            <time class="tagcloud-posttime">2013 / 12 / 24</time>
+            <span>Tags</span>
+          </a>
+        </div>
+
+    </div>
+
+</div>
+
+  </div>
+  <div class="backtop syuanpi melt toTop" id="backtop">
+    <i class="iconfont icon-up"></i>
+    <span style="text-align:center;font-family:Georgia;"><span style="font-family:Georgia;" id="scrollpercent">1</span>%</span>
+</div>
+
+
+<script src="/banderole/script/lib/jquery/jquery-3.2.1.min.js"></script>
 
 
   <script src="/banderole/script/lib/lightbox/js/lightbox.min.js"></script>
@@ -541,29 +638,15 @@
 
 
 
-<script src="/banderole/script/src/nlvi.js"></script>
+
+
 
   <script src="/banderole/script/scheme/banderole.js"></script>
+
 
 <script src="/banderole/script/bootstarp.js"></script>
 
 
-<div class="backtop syuanpi melt toTop" id="backtop">
-    <i class="iconfont icon-up"></i>
-    <span style="text-align:center;font-family:Georgia;"><span style="font-family:Georgia;" id="scrollpercent">1</span>%</span>
-</div>
-
-
-  <div class="search" id="search">
-    <div class="mask" id="mask"></div>
-    <div class="search-wrapper syuanpi">
-      <h2 id="search-header" class="syuanpi">搜索一下？</h2>
-      <div class="input">
-        <input type="text" id="local-search-input" results="0" name="">
-      </div>
-      <div id="local-search-result"></div>
-    </div>
-  </div>
 
 
 </body>
