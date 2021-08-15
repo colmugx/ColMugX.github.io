@@ -33,7 +33,7 @@ import{c as e,a as t,b as n,u as i,t as r,d as o,i as a,o as s,e as l,f as d,g a
   100% { background-color: #383838; color: #fff; opacity: 1; }
 `,G=r("<div><div>NOTIF</div><div><div><p>换了个风格，但是还没写好</p><p>你可以看到下面的按钮都是灰的</p><p>没错，我在摆烂</p><p><del>（还有，它很消耗性能）</del></p></div></div></div>"),J=()=>{const e=o`
     position: absolute;
-    top: -58px;
+    top: -124px;
     right: 16px;
     width: 300px;
     min-height: 200px;
@@ -78,6 +78,11 @@ import{c as e,a as t,b as n,u as i,t as r,d as o,i as a,o as s,e as l,f as d,g a
     display: flex;
     justify-content: center;
     align-items: center;
+
+    p {
+      margin: 0;
+      line-height: 2;
+    }
   `;return(()=>{const i=G.cloneNode(!0),r=i.firstChild,o=r.nextSibling;return r.className=t,o.className=n,d((()=>i.className=c(e,"syuanpi","tvIn","back-3"))),i})()},K=r("<div><div><div><p>Welcome!</p></div><div><p>ColmugX Homepage</p></div></div></div>"),Y=o`
   position: relative;
 `,Q=o`
